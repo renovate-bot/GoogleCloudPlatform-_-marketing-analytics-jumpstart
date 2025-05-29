@@ -529,7 +529,7 @@ resource "google_kms_key_ring_iam_policy" "key_ring" {
 # This module stores the values ga4-measurement-id and ga4-measurement-secret in Google Cloud Secret Manager.
 module "secret_manager" {
   source     = "GoogleCloudPlatform/secret-manager/google"
-  version    = "0.7.0"
+  version    = "0.8.0"
   project_id = google_kms_crypto_key_iam_policy.crypto_key.etag != "" && google_kms_key_ring_iam_policy.key_ring.etag != "" ? module.project_services.project_id : var.project_id
   secrets = [
     {
