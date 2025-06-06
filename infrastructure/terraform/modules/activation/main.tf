@@ -353,7 +353,7 @@ resource "null_resource" "check_cloudkms_api" {
 
 module "bigquery" {
   source  = "terraform-google-modules/bigquery/google"
-  version = "9.0.0"
+  version = "10.1.1"
 
   dataset_id                 = local.app_prefix
   dataset_name               = local.app_prefix

@@ -72,7 +72,7 @@ resource "null_resource" "check_bigquery_api" {
 
 module "dashboard_bigquery" {
   source  = "terraform-google-modules/bigquery/google"
-  version = "9.0.0"
+  version = "10.1.1"
 
   dataset_id                 = local.dashboard_dataset_name
   dataset_name               = local.dashboard_dataset_name
@@ -163,7 +163,7 @@ locals {
 
 module "log_export_bigquery" {
   source  = "terraform-google-modules/bigquery/google"
-  version = "9.0.0"
+  version = "10.1.1"
 
   dataset_id                 = local.log_dataset_name
   dataset_name               = local.log_dataset_name
