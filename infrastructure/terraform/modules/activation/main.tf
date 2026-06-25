@@ -80,7 +80,7 @@ data "google_project" "activation_project" {
 
 module "project_services" {
   source  = "terraform-google-modules/project-factory/google//modules/project_services"
-  version = "18.0.0"
+  version = "18.3.0"
 
   disable_dependent_services  = false
   disable_services_on_destroy = false
